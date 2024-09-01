@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Book Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Catalogue</h1>
+        
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by title..">
+            <select id="sort">
+                <option value="">Sort by</option>
+                <option value="title">Sort by Title</option>
+                <option value="author">Sort by Author</option>
+                <option value="description">Sort by Description</option>
+                <option value="publisher">Sort by Publisher</option>
+                <option value="rank">Sort by Rank</option>
+            </select>
+            <select id="rankFilter">
+                <option value="">Filter by Rank</option>
+                <option value="1">Rank 1</option>
+                <option value="2">Rank 2</option>
+                <option value="3">Rank 3</option>
+                <option value="4">Rank 4</option>
+                <option value="5">Rank 5</option>
+                <option value="5">Rank 5</option>
+                <option value="6">Rank 6</option>
+                <option value="7">Rank 7</option>
+                <option value="8">Rank 8</option>
+                <option value="9">Rank 9</option>
+                <option value="10">Rank 10</option>
+                <option value="11">Rank 11</option>
+                <option value="12">Rank 12</option>
+                <option value="13">Rank 13</option>
+                <option value="14">Rank 14</option>
+                <option value="15">Rank 15</option>
+            </select>
+            <button id="fetchButton">Fetch Books</button>
+        </div>
+        
+
+        <div id="loading" class="loading">Loading...</div>
+
+        <div id="bookList" class="book-list"></div>
+        
+        <div id="pagination" class="pagination"></div>
+        
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
